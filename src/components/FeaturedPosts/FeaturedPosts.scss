@@ -1,0 +1,42 @@
+@import '../../App.scss';
+
+.features{
+    margin-top: 8rem;
+
+    &__card__container{
+        display: flex;
+        margin-bottom: 5rem;
+
+        &:hover{
+            color: $hover-color;
+            cursor: pointer;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h4{
+            font-family: $font;
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        p{
+            font-family: $font-text;
+        }
+    }
+
+    &__image{
+        img{
+            display: block;
+            max-height: 260px;
+            max-width: 100%;
+            min-width: 305px;
+            width: 373px;
+            height: 210px;
+            margin-left: 5vw;
+        }
+        
+    }
+}

@@ -1,0 +1,71 @@
+@import '../App.scss';
+
+
+.posts{
+    margin-top: 8rem;
+
+    &__container{
+        grid-gap: 3rem 2rem;
+        display: grid;
+        gap: 3rem 2rem;
+        grid-template-columns: repeat(auto-fill,minmax(330px,1fr));
+        margin: 0 auto 2rem;
+        max-width: 1120px;
+
+        article{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+    }
+
+    &__card__container{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-bottom: 5rem;
+
+        &:hover{
+            color: $hover-color;
+            cursor: pointer;
+        }
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h4{
+            font-family: $font;
+            font-size: 2.2rem;
+            margin: 0;
+        }
+        p{
+            font-family: $font-text;
+        }
+    }
+
+    &__image{
+        img{
+            display: block;
+            max-width: 500px;
+            height: 100%;
+            width: 100%;
+            max-height: 390px;
+            margin-left: 0;
+        }
+        
+    }
+}
+
+.posts__card__container{
+    
+
+    img{
+      
+    }
+
+    .posts__content{
+      margin-top: 1.5rem;
+    }
+  }

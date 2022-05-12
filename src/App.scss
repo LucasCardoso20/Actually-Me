@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather:ital,wght@1,300&display=swap');
+
+$main-color: #000;
+$second-color: #fff;
+$hover-color: #e22a1d;
+$font: 'Bebas Neue', cursive;
+$font-text: 'Merriweather', serif;
+
+.container{
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+li{
+  list-style: none;
+}
+
+.btn__singlePosts{
+  background-color: $main-color;
+  width: 280px !important;
+  height: 48px !important;
+  border: 3px solid $second-color;
+  font-family: $font;
+  font-size: 1.2rem;
+  color: $second-color;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  // transition: 500ms;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $hover-color;
+    color: $second-color;
+    border: none;
+  }
+
+  a{
+    width: 280px !important;
+    height: 48px !important;
+  }
+}
+
+.btn{
+  background-color: transparent;
+  width: 280px;
+  height: 48px;
+  border: 3px solid $second-color;
+  font-family: $font;
+  font-size: 1.2rem;
+  color: $second-color;
+  // transition: 500ms;
+  cursor: pointer;
+
+  &:hover{
+    background-color: $hover-color;
+    color: $second-color;
+    border: none;
+  }
+}
+
+
+
+//responsive
+
+@media screen and (max-width: 1200px){
+  .container{
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+}
+
+@media screen and (max-width:1200px){
+.hero{
+    h1{
+        font-size: 2.2rem !important;
+        line-height: 50px !important;
+      }
+
+      p{
+        margin-top: 2rem !important;
+      }  
+    }
+}
+
+@media screen and(max-width: 800px){
+  .nav{
+    &__list{
+      display: none;
+    }
+  }  
+
+  .container{
+    margin-left: 2rem ;
+    margin-right: 2rem ; 
+  }
+
+  .hero__container{
+    margin-top: 3.5rem ;
+    width: 90% !important;
+  }
+
+  .footer__container{
+    flex-wrap: wrap;
+
+    .footer__info{
+      width: 100%;
+
+      h4{
+        justify-content: center;
+      }
+
+      button{
+        width: 100%;
+      }
+    }
+
+    ul{
+      margin-top: 5rem;
+    }
+  }
+}
+
+@media screen and (min-width: 801px){
+  .nav__container__mobile{
+      display: none !important;
+    }
+}
+
+@media screen and (max-width: 920px){
+  .features__card__container{
+    flex-direction: column-reverse;
+
+    img{
+      height: 100%;
+      width: 100%;
+      max-height: 390px;
+      margin-left: 0;
+    }
+
+    .features__content{
+      margin-top: 1.5rem;
+    }
+  }
+}
+
+@media screen and (max-width: 700px){
+  .singlePost__container{
+    flex-direction: column;
+  }
+
+  .singlePost__details{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+}

@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.hero{
+    &__container{
+        margin-top: 3.5rem !important;
+        width: 60%;
+
+        span{
+            font-family: $font;
+            font-size: 19px;
+            margin-left: .4rem;
+        }
+
+        h1{
+            font-size: 4.7rem;
+            line-height: 70px;
+            letter-spacing: -2px;
+            margin: 0 !important;
+        }
+
+        p{
+            width: 80%;
+            margin-top: 3.5rem;
+            font-size: 18px;
+            font-family: $font-text;
+        }
+    }
+}

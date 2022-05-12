@@ -1,0 +1,124 @@
+@import '../../App.scss';
+
+.nav{
+    &__container{
+        display: flex;
+        padding-top: .8rem;
+        justify-content: space-between;
+    }
+
+    &__logo{
+        width: 60px;
+        height: 60px;
+    }
+
+    &__list{
+        display: flex;
+
+
+        li{
+            list-style: none;
+
+            a{
+                font-size: 23px;
+                padding: 16px 16px 14px;
+                font-family: $font;
+                color: $main-color;
+                text-decoration: none;
+
+                &:hover{
+                    color: $hover-color;
+                }
+            }
+        }
+    }
+
+
+    
+
+    .nav__container__mobile{
+
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .nav__menu__mobile{            
+            color: black;
+            width:60px;
+            height: 60px;
+            cursor: pointer;
+        }
+
+
+        div{
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            padding: 1rem;
+            width: 80%;
+            height: 100vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            flex-direction: column;
+        
+            background-color: $second-color;
+            background-size: cover;
+            background-repeat: repeat;
+
+            box-shadow: 0 0 20px rgba(168, 168, 168, 0.15);
+        
+            ul{
+                
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                width: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: flex-start;
+                flex-direction: column;
+
+
+
+                li{
+                    margin: 1rem;
+    
+                    a{
+                        color: $main-color;
+                        text-decoration: none;
+                        font-size: 1.8rem;
+                        font-family: $font;
+                        text-transform: uppercase;
+                        font-weight: 500;
+    
+                        transition: all 0.3 ease-in-out;
+    
+                        &:hover{
+                            color: $hover-color;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+
+    
+
+    .close__menu__mobile{
+        color: $main-color;
+        cursor: pointer;
+        width:40px;
+        height: 40px;
+    }
+}
+
+
