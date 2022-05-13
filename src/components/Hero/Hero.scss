@@ -3,7 +3,12 @@
 .hero{
     &__container{
         margin-top: 3.5rem !important;
+        padding-top: 4.8rem !important;
         width: 60%;
+
+        // div{
+        //     padding-top: 5rem !important;
+        // }
 
         span{
             font-family: $font;

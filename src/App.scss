@@ -171,6 +171,10 @@ li{
     flex-direction: column;
   }
 
+  .singlePost__author__bio{
+    margin-left: 0 !important;
+  }
+
   .singlePost__details{
     flex-direction: column;
     gap: 1rem;
